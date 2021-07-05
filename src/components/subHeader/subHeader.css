@@ -1,0 +1,27 @@
+.subHeaderContainer {
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #e2e2e2;
+    /*color: #ffffff;*/
+    font-size: 14px;
+    align-items: center;
+    /* color: #ffffff; */
+}
+.buttonContainer {
+    padding: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.buttonContainer:hover {
+    color: #fff;
+    background: #0f3761;
+}
+
+.subHeaderContainer .ui.grid {
+    justify-content: flex-start !important;
+}
+
+.subHeaderContainer .rightPanel{
+    margin-top: 50px !important;
+}

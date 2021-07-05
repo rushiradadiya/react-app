@@ -1,0 +1,35 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 50px;
+    /* background-color: #13948e; */
+    /*color: #ffffff;*/
+    font-size: 20px;
+    align-items: center;
+    /* color: #ffffff; */
+}
+.buttonContainer {
+    padding: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.buttonContainer:hover {
+    color: #fff;
+    background: #0f3761;
+}
+
+.headerContainer .ui.grid {
+    justify-content: flex-end;
+}
+
+.headerContainer .leftPanel{
+    margin-top: auto !important;
+    display:flex !important;
+    flex-Direction: 'row' !important;
+    font-size:15px
+}
+.headerContainer .rightPanel{
+    margin-top: 50px !important;
+}

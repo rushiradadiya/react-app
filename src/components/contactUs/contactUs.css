@@ -7,10 +7,15 @@
     margin-top: 20px !important;
     font-weight: normal !important;
 }
-.triangleView{
-    height: 360px;
-   
-    border-style: solid;
-    border-width: 360px 1200px 0 0;
-    border-color: #4f46e5 transparent transparent transparent;
+.innerView{
+    display: flex;
+}
+i.big.icon, i.big.icons{
+    margin: 10px 10px 0 0 !important;
+}
+.innerView h3{
+    font-weight: normal;
+}
+.innerView h4{
+    font-size: 17px;
 }

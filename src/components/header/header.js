@@ -14,7 +14,7 @@ const HeaderComponent = (props) =>{
                  <div>
                      <span><h3>Articles & Friends</h3></span> 
                      <span><Icon name='map marker alternate'color='red'/>Ukrid, Ranchi, Jharkhand</span><br/>
-                     <span><Icon name='call'    color='blue'/> 9638509600</span>
+                     <span><Icon name='call'  color='blue'/> 9638509600</span>
                  </div>
               
            </Container>
@@ -31,7 +31,7 @@ const HeaderComponent = (props) =>{
                      About Us
                    </a>
                    <a className="buttonContainer" onClick={()=>{
-                       props.history.push("/friends")
+                       props.history.push("/contactUs")
                    }}>
                      Contact Us
                    </a>

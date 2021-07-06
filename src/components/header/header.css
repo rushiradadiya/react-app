@@ -32,4 +32,14 @@
 }
 .headerContainer .rightPanel{
     margin-top: 50px !important;
+    display: flex;
+    justify-content: flex-end;
+}
+.headerContainer .ui.secondary.menu .active.item{
+    color: #fff;
+    background: #0f3761;
+   
+}
+.headerContainer .ui.secondary.menu .item{
+    font-size: 18px;
 }

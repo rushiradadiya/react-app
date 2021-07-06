@@ -6,3 +6,11 @@
     background-color: #13928c;
     color: #ffffff;
 }
+.qtyText{
+    font-size: 16px;
+    line-height: 40px;
+}
+.listView {
+    font-size: 16px;
+    line-height: 30px;
+}

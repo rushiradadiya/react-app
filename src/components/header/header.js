@@ -1,11 +1,14 @@
-import React from 'react';
-import {Grid, Container, Image,Icon } from 'semantic-ui-react'
+import React,{useState} from 'react';
+import {Grid, Container, Image,Icon, Menu } from 'semantic-ui-react'
 import "./header.css"
 import logo from "../../images/logo.png"
 import SubHeader from "../subHeader/subHeader";
+import { NavLink, } from 'react-router-dom'
+
 
 
 const HeaderComponent = (props) =>{
+    const [activeItem,setActiveItem] = useState('home')
     return(
         <div>
             <div className="headerContainer">
@@ -19,23 +22,36 @@ const HeaderComponent = (props) =>{
               
            </Container>
            <Container className="rightPanel">
-               <Grid>
-                    <a className="buttonContainer" onClick={()=>{
-                        props.history.push("/home")
-                    }}>
-                       Home
-                    </a>
-                   <a className="buttonContainer" onClick={()=>{
-                       props.history.push("/about")
-                   }}>
-                     About Us
-                   </a>
-                   <a className="buttonContainer" onClick={()=>{
-                       props.history.push("/contactUs")
-                   }}>
-                     Contact Us
-                   </a>
-               </Grid>
+           <Menu secondary >
+                <Menu.Item
+                    as={NavLink} to="/home"
+                    name='Home'
+                    active={activeItem === 'home'}
+                    onClick={()=>{
+                        setActiveItem('home') 
+                    }}
+                        
+                />
+                <Menu.Item
+                    as={NavLink} to="/about"
+                    name='About'
+                    active={activeItem === 'about'}
+                    onClick={()=>{
+                       
+                        setActiveItem('about')
+                       }}
+                />
+                <Menu.Item
+                    as={NavLink} to="/contactUs"
+                    name='Contact Us'
+                    active={activeItem === 'contactUs'}
+                    onClick={()=>{
+                    
+                        setActiveItem('contactUs')
+                    }}
+                />
+            
+            </Menu>
            </Container>
        </div>
        <SubHeader {...props}/>

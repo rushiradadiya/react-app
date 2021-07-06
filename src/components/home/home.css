@@ -10,13 +10,10 @@
 }
 
 .article .description {
-    max-height: 140px;
-    overflow-y: auto;
+  font-size: 16px;
+  line-height: 30px;
 }
 
-.article .description::-webkit-scrollbar {
-   display: none;
-}
 
 .article .ui.card:hover {
     box-shadow: -1px 3px 10px 3px rgba(119, 119, 119, 0.5);
@@ -28,7 +25,6 @@
 }
 
 .article .ui.card .image img {
-    height: 100%;
     object-fit: cover;
 }
 
@@ -36,7 +32,13 @@
     flex: 60%;
     border: none;
 }
-
+.view-more{
+    max-height: 400px !important;
+    overflow: hidden;
+}
+.view-less{
+    height: 100% !important;
+}
 .article .column {
     padding-top: 1rem;
     padding-bottom: 1rem;
